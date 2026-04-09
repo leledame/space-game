@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.badlogicgames.gdx:gdx-box2d-platform:natives-desktop:1.12.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.badlogicgames.gdx" artifactId="gdx-box2d-platform" version="1.12.0" baseVersion="1.12.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d-platform/1.12.0/7b6b430c4a58354e86722759298472948f341f3b/gdx-box2d-platform-1.12.0-natives-desktop.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

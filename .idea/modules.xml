@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/space_cleaner.iml" filepath="$PROJECT_DIR$/.idea/modules/space_cleaner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.iml" filepath="$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.main.iml" filepath="$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android/space_cleaner.android.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/space_cleaner.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/space_cleaner.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/space_cleaner.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/space_cleaner.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/space_cleaner.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/space_cleaner.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/space_cleaner.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/space_cleaner.desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/space_cleaner.desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/space_cleaner.desktop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/space_cleaner.desktop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/space_cleaner.desktop.test.iml" />
+    </modules>
+  </component>
+</project>

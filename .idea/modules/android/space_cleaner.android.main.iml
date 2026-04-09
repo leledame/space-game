@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":android:main" external.linked.project.path="$MODULE_DIR$/../../../android" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet external-system-id="GRADLE" type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../assets" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../android/build/intermediates/javac/debug/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../android/build/generated/ap_generated_sources/debug/out" />
+    <content url="file://$MODULE_DIR$/../../../android/build/generated/res/resValues/debug" />
+    <content url="file://$MODULE_DIR$/../../../android/res">
+      <sourceFolder url="file://$MODULE_DIR$/../../../android/res" type="java-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../android/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../android/src" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../assets">
+      <sourceFolder url="file://$MODULE_DIR$/../../../assets" type="java-resource" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 35, extension level 13 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="space_cleaner.core.main" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-backend-android:1.12.0@aar" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.badlogicgames.gdx:gdx-freetype:1.12.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.12.0/5c9ce57d7e95c35dead37f674d23c023c1a4167d/gdx-freetype-1.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.12.0/9a572ac4fcc1f114411e0eee11b8a0c5b1e37666/gdx-freetype-1.12.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.12.0/4ac379cc3825b765f7e63b1f91430493c88492f0/gdx-freetype-1.12.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.badlogicgames.gdx:gdx:1.12.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.12.0/8a9080c5e2d441e43a44fbcbf721374a2e0b9dfa/gdx-1.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.12.0/52c7602decb2ec2318dc596b841fc4ac088ec1f/gdx-1.12.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.12.0/47779a065d1fa9a102cf18af17fd737bed88035a/gdx-1.12.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.badlogicgames.gdx:gdx-jnigen-loader:2.3.1">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-jnigen-loader/2.3.1/2d472f69243631fbcb3d4c3f93dd2e137a6cb084/gdx-jnigen-loader-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-jnigen-loader/2.3.1/fb385783eebaf04e9f48392dd76e0b46575d5647/gdx-jnigen-loader-2.3.1-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-jnigen-loader/2.3.1/8228a038af98f2d0fa7b23ea7b4fa330af832305/gdx-jnigen-loader-2.3.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: com.badlogicgames.gdx:gdx-box2d:1.12.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.12.0/aea4c00da8a8faad8cfe6345d804277229e70aba/gdx-box2d-1.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.12.0/8bad94b50f07c90fa64d6ee5d157e5e29a79067f/gdx-box2d-1.12.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.12.0/2912fa5780e3e1cd3884a42c8f5970b153a80666/gdx-box2d-1.12.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
