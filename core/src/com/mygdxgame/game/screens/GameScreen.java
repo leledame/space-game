@@ -6,18 +6,27 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.mygdxgame.game.GameResources;
+import com.mygdxgame.game.GameSession;
 import com.mygdxgame.game.GameSettings;
 import com.mygdxgame.game.MyGdxGame;
 import com.mygdxgame.game.objects.ShipObject;
+import com.mygdxgame.game.objects.TrashObject;
+
+import java.util.ArrayList;
 
 public class GameScreen extends ScreenAdapter {
 
     MyGdxGame myGdxGame;
+    GameSession gameSession;
     ShipObject shipObject;
 
+    ArrayList<TrashObject> trashArray;
 
     public GameScreen(MyGdxGame myGdxGame) {
         this.myGdxGame = myGdxGame;
+        gameSession = new GameSession();
+
+        trashArray = new ArrayList<>();
 
         shipObject = new ShipObject(
                 GameSettings.SCREEN_WIDTH / 2, 150,
@@ -25,6 +34,12 @@ public class GameScreen extends ScreenAdapter {
                 GameResources.SHIP_IMG_PATH,
                 myGdxGame.world
         );
+
+    }
+
+    @Override
+    public void show() {
+        gameSession.startGame();
     }
 
     @Override
@@ -32,6 +47,18 @@ public class GameScreen extends ScreenAdapter {
 
         myGdxGame.stepWorld();
         handleInput();
+
+        if (gameSession.shouldSpawnTrash()) {
+            TrashObject trashObject = new TrashObject(
+                    GameSettings.TRASH_WIDTH, GameSettings.TRASH_HEIGHT,
+                    GameResources.TRASH_IMG_PATH,
+                    myGdxGame.world
+            );
+            trashArray.add(trashObject);
+        }
+
+        updateTrash();
+
         draw();
     }
 
@@ -49,7 +76,18 @@ public class GameScreen extends ScreenAdapter {
         ScreenUtils.clear(Color.CLEAR);
 
         myGdxGame.batch.begin();
+        for (TrashObject trash : trashArray) trash.draw(myGdxGame.batch);
         shipObject.draw(myGdxGame.batch);
         myGdxGame.batch.end();
+
+    }
+
+    private void updateTrash() {
+        for (int i = 0; i < trashArray.size(); i++) {
+            if (!trashArray.get(i).isInFrame()) {
+                myGdxGame.world.destroyBody(trashArray.get(i).body);
+                trashArray.remove(i--);
+            }
+        }
     }
 }
