@@ -2,13 +2,18 @@ package com.mygdxgame.game;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.physics.box2d.Box2D;
 import com.badlogic.gdx.physics.box2d.World;
+import com.mygdxgame.game.managers.AudioManager;
 import com.mygdxgame.game.screens.GameScreen;
+import com.mygdxgame.game.screens.MenuScreen;
+import com.mygdxgame.game.screens.SettingsScreen;
 
 import static com.mygdxgame.game.GameSettings.*;
 
@@ -16,11 +21,18 @@ public class MyGdxGame extends Game {
 
     public World world;
 
+    public BitmapFont largeWhiteFont;
+    public BitmapFont commonWhiteFont;
+    public BitmapFont commonBlackFont;
+
     public Vector3 touch;
     public SpriteBatch batch;
     public OrthographicCamera camera;
+    public AudioManager audioManager;
 
     public GameScreen gameScreen;
+    public MenuScreen menuScreen;
+    public SettingsScreen settingsScreen;
 
     float accumulator = 0;
 
@@ -30,13 +42,20 @@ public class MyGdxGame extends Game {
         Box2D.init();
         world = new World(new Vector2(0, 0), true);
 
+        largeWhiteFont = FontBuilder.generate(48, Color.WHITE, GameResources.FONT_PATH);
+        commonWhiteFont = FontBuilder.generate(24, Color.WHITE, GameResources.FONT_PATH);
+        commonBlackFont = FontBuilder.generate(24, Color.BLACK, GameResources.FONT_PATH);
+
         batch = new SpriteBatch();
         camera = new OrthographicCamera();
         camera.setToOrtho(false, GameSettings.SCREEN_WIDTH, GameSettings.SCREEN_HEIGHT);
+        audioManager = new AudioManager();
 
         gameScreen = new GameScreen(this);
+        menuScreen = new MenuScreen(this);
+        settingsScreen = new SettingsScreen(this);
 
-        setScreen(gameScreen);
+        setScreen(menuScreen);
     }
 
     @Override
