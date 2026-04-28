@@ -37,4 +37,16 @@ public class AudioManager {
         else backgroundMusic.stop();
     }
 
+    public void playShootSound() {
+        if (isSoundOn) shootSound.play();
+    }
+
+    public void playExplosionSound() {
+        if (isSoundOn) explosionSound.play();
+    }
+
+    public void playShipDestroySound() {
+        if (isSoundOn) explosionSound.play();
+    }
+
 }

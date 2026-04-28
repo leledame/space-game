@@ -24,6 +24,7 @@ public class MyGdxGame extends Game {
     public BitmapFont largeWhiteFont;
     public BitmapFont commonWhiteFont;
     public BitmapFont commonBlackFont;
+    public BitmapFont comboFont;
 
     public Vector3 touch;
     public SpriteBatch batch;
@@ -45,6 +46,7 @@ public class MyGdxGame extends Game {
         largeWhiteFont = FontBuilder.generate(48, Color.WHITE, GameResources.FONT_PATH);
         commonWhiteFont = FontBuilder.generate(24, Color.WHITE, GameResources.FONT_PATH);
         commonBlackFont = FontBuilder.generate(24, Color.BLACK, GameResources.FONT_PATH);
+        comboFont = FontBuilder.generate(29, Color.WHITE, GameResources.FONT_PATH);
 
         batch = new SpriteBatch();
         camera = new OrthographicCamera();

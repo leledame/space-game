@@ -38,7 +38,6 @@ public class GameSession {
     }
 
     public void endGame() {
-        updateScore();
         state = GameState.ENDED;
         ArrayList<Integer> recordsTable = MemoryManager.loadRecordsTable();
         if (recordsTable == null) {
@@ -52,12 +51,12 @@ public class GameSession {
         MemoryManager.saveTableOfRecords(recordsTable);
     }
 
-    public void destructionRegistration() {
+    public void destructionRegistration(int comboCount) {
         destructedTrashNumber += 1;
-    }
-
-    public void updateScore() {
-        score = (int) (TimeUtils.millis() - sessionStartTime) / 100 + destructedTrashNumber * 100;
+        score += 100; // базовые очки за мусор
+        if (comboCount > 1) {
+            score += (comboCount - 1) * 100; // бонус за комбо
+        }
     }
 
     public int getScore() {

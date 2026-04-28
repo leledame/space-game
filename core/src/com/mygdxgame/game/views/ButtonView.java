@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class ButtonView extends View {
-    Texture texture;
+    public Texture texture;
     BitmapFont bitmapFont;
     String text;
     float textX;

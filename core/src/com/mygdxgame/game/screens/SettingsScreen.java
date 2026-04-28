@@ -13,8 +13,6 @@ import com.mygdxgame.game.views.ImageView;
 import com.mygdxgame.game.views.MovingBackgroundView;
 import com.mygdxgame.game.views.TextView;
 
-import java.util.ArrayList;
-
 public class SettingsScreen extends ScreenAdapter {
 
     MyGdxGame myGdxGame;
@@ -87,7 +85,7 @@ public class SettingsScreen extends ScreenAdapter {
                 myGdxGame.setScreen(myGdxGame.menuScreen);
             }
             if (clearSettingView.isHit(myGdxGame.touch.x, myGdxGame.touch.y)) {
-                MemoryManager.saveTableOfRecords(new ArrayList<>());
+                MemoryManager.clearRecords();
                 clearSettingView.setText("clear records (cleared)");
             }
             if (musicSettingView.isHit(myGdxGame.touch.x, myGdxGame.touch.y)) {

@@ -46,4 +46,19 @@ public class MemoryManager {
         return table;
     }
 
+    public static void clearRecords() {
+        preferences.remove("recordTable");
+        preferences.flush();
+    }
+
+    public static void saveRecord(int score) {
+        ArrayList<Integer> records = loadRecordsTable();
+        if (records == null) records = new ArrayList<>();
+
+        if (records.isEmpty() || score > records.get(0)) {
+            records.add(0, score);
+            saveTableOfRecords(records);
+        }
+    }
+
 }
